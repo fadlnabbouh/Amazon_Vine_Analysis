@@ -3,13 +3,16 @@
 ## Overview
 
 The purpose of this project was to analyze reviews on Amazon for sports products and determine whether Vine members show bias by providing positive reviews. ETL was conducted on the dataset to extract it, transform the data, and load it into pgAdmin. Afterwards, the data was analyzed using pandas.
-To view the ETL code, click [here](). 
-To view the analysis, click [here]().
+
+To view the ETL code, click [here](https://github.com/fadlnabbouh/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb). 
+
+To view the analysis, click [here](https://github.com/fadlnabbouh/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb).
 
 ## Results
 
 To determine whether bias exists with Vine-member reviews and sports products, the original data was transformed into a table in pgAdmin with review_id, rating, helpful votes, total votes, verified purchase, and vine data. Only products with 20 votes or more were analyzed and of that data, only ones where helpful votes made up 50% or more of total votes were analyzed.The dataframe was then split into two dataframes to represent vine and non-vine members.
-![image1]()
+
+![image1](https://github.com/fadlnabbouh/Amazon_Vine_Analysis/blob/main/resources/image1.png)
 
 From the analysis, I found that for sports product reviews on Amazon:
 - 311 reviews were from vine members
@@ -17,7 +20,7 @@ From the analysis, I found that for sports product reviews on Amazon:
 - of the 311 reviews from vine members, 129 were 5 star reviews or 41.48%
 - of the 57509 reviews from non-vine members, 30631 were 5 star reviews or 53.26%
 
-![image2]()
+![image2](https://github.com/fadlnabbouh/Amazon_Vine_Analysis/blob/main/resources/image2.png)
 
 ## Summary
 
